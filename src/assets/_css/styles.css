@@ -1,0 +1,205 @@
+/*------ HEADER ----------*/
+
+.router-link-exact-active {
+    color: blue;
+}
+
+#Menu {
+    background-color: black;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Menu a {
+    padding: 0 2%;
+    width: 140px;
+    font-size: 14px;
+}
+
+div.logo {
+    background-image: url('../_img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    margin: 5% 0;
+}
+
+div.fixText {
+    width: 360px;
+    font-weight: 700;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    background-color: transparent;
+}
+
+div.fixText img {
+    width: 140px;
+    margin: auto;
+    background-color: transparent;
+}
+
+div.fixText p {
+    background-color: transparent;
+}
+
+div#content {
+    padding: 40px;
+}
+
+
+/*---------FOOTER--------------*/
+
+div.line {
+    background: black;
+    height: 20px;
+    width: 100%;
+}
+
+div.cords {
+    background-image: url('../_img/cords.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height: 20px;
+    margin: 2% 10% 2% 60%;
+}
+
+div.fo-note {
+    margin: 2% 0 1% 0;
+    text-align: center;
+    height: 20px;
+}
+
+
+/*---------------------SHOP/PRODUTOS------------------------*/
+
+a.fw {
+    height: max-content;
+    padding: 2%;
+}
+
+a.fw p {
+    text-align: center;
+    width: 100%;
+}
+
+a.fw img {
+    width: 100%;
+}
+
+
+/*---------------RESPONSIVO--------------*/
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    #Menu {
+        justify-content: space-evenly;
+    }
+    #Menu a {
+        FONT-SIZE: 16px;
+        width: max-content;
+    }
+    .fixText {
+        display: none;
+    }
+    div.cords {
+        width: 60%;
+        height: 50px;
+        margin: 2% 20%;
+    }
+    div#content {
+        padding-top: 0;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+    div.logo {
+        margin: 80px 0 7% 0;
+    }
+}
+
+
+/*-----------VUE FIXED HEADER---------- */
+
+.navbar {
+    width: 100%;
+    z-index: 100000;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+/*-----------VUE FLASH NOTIFICATIONS------*/
+
+.notifications {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+}
+
+.flash__message {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 30px 15px 15px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.flash__close-button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 10px;
+    margin: 0;
+    padding: 8px;
+}
+
+.flash__message.error {
+    color: #a94442;
+    background-color: transparent;
+    border-color: #a94442;
+}
+
+.flash__message.success {
+    color: #3c763d;
+    background-color: transparent;
+    border-color: #3c763d;
+}
+
+.flash__message.info {
+    color: #37516a;
+    background-color: transparent;
+    border-color: #37516a;
+}
+
+.flash__message.warning {
+    color: #8a6d3b;
+    background-color: transparent;
+    border-color: #8a6d3b;
+}
